@@ -1,0 +1,25 @@
+PING 52.94.76.1 (52.94.76.1) from 150.50.0.50: 56 data bytes
+64 bytes from 52.94.76.1: seq=0 ttl=63 time=16.888 ms
+64 bytes from 52.94.76.1: seq=1 ttl=63 time=16.867 ms
+64 bytes from 52.94.76.1: seq=2 ttl=63 time=16.894 ms
+64 bytes from 52.94.76.1: seq=3 ttl=63 time=16.846 ms
+64 bytes from 52.94.76.1: seq=4 ttl=63 time=16.957 ms
+64 bytes from 52.94.76.1: seq=5 ttl=63 time=16.836 ms
+64 bytes from 52.94.76.1: seq=6 ttl=63 time=16.859 ms
+64 bytes from 52.94.76.1: seq=7 ttl=63 time=16.823 ms
+64 bytes from 52.94.76.1: seq=8 ttl=63 time=16.893 ms
+64 bytes from 52.94.76.1: seq=9 ttl=63 time=16.853 ms
+64 bytes from 52.94.76.1: seq=10 ttl=63 time=16.940 ms
+64 bytes from 52.94.76.1: seq=11 ttl=63 time=16.851 ms
+64 bytes from 52.94.76.1: seq=12 ttl=63 time=16.837 ms
+64 bytes from 52.94.76.1: seq=13 ttl=63 time=16.861 ms
+64 bytes from 52.94.76.1: seq=14 ttl=63 time=16.802 ms
+64 bytes from 52.94.76.1: seq=15 ttl=63 time=17.049 ms
+64 bytes from 52.94.76.1: seq=16 ttl=63 time=16.838 ms
+64 bytes from 52.94.76.1: seq=17 ttl=63 time=16.865 ms
+64 bytes from 52.94.76.1: seq=18 ttl=63 time=16.843 ms
+64 bytes from 52.94.76.1: seq=19 ttl=63 time=16.974 ms
+
+--- 52.94.76.1 ping statistics ---
+20 packets transmitted, 20 packets received, 0% packet loss
+round-trip min/avg/max = 16.802/16.878/17.049 ms

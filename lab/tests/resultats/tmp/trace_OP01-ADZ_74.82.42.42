@@ -1,0 +1,8 @@
+Traceroute via 110.10.0.10:
+  traceroute to 74.82.42.42 (74.82.42.42) from 110.10.0.10, 5 hops max, 46 byte packets
+   1  10.10.1.1  9.125 ms
+   2  74.82.42.42  11.397 ms
+Traceroute via 110.10.1.10:
+  traceroute to 74.82.42.42 (74.82.42.42) from 110.10.1.10, 5 hops max, 46 byte packets
+   1  10.10.2.1  5.941 ms
+   2  74.82.42.42  8.033 ms

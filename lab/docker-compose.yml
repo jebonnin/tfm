@@ -1,0 +1,321 @@
+services:
+
+  r6:
+    image: frrouting/frr
+    command: sh /init.sh
+    privileged: true
+    volumes:
+      - ./configs/r6/init.sh:/init.sh
+      - ./configs/r6/frr.conf:/etc/frr/frr.conf
+      - ./configs/r6/daemons:/etc/frr/daemons
+      - ./configs/r6/vtysh.conf:/etc/frr/vtysh.conf
+      - ./configs/r6/monitor.sh:/monitor.sh
+      - ./configs/r6/set_interfaces.sh:/set_interfaces.sh
+    networks:
+      hurricane0_net:
+        interface_name: hurricane0
+      orange_jazztel0_net:
+        interface_name: orangejazztel0
+      espanix0_net:
+        interface_name: espanix0
+      google0_net:
+        interface_name: google0
+      google1_net:
+        interface_name: google1
+      netflix0_net:
+        interface_name: netflix0
+      netflix1_net:
+        interface_name: netflix1
+      netflix2_net:
+        interface_name: netflix2
+      meta0_net:
+        interface_name: meta0
+      meta1_net:
+        interface_name: meta1
+      meta2_net:
+        interface_name: meta2
+      orange_sst_net:
+        interface_name: orangesst0
+      orange_rjt_net:
+        interface_name: orangerjt0
+      avatel_als_net:
+        interface_name: avatelals0
+      lyntia_net:
+        interface_name: lyntia0
+      correostelecom_net:
+        interface_name: correostelecom0
+      avatel_sst_net:
+        interface_name: avatelsst0
+      masmovil_rjt_net:
+        interface_name: masmovilrjt0
+      airenetworks_net:
+        interface_name: airenetworks0
+      avatel_adz_net:
+        interface_name: avateladz0
+        
+  hurricane:
+    image: frrouting/frr
+    command: sh /init.sh
+    depends_on: 
+      - r6
+    privileged: true
+    volumes:
+      - ./configs/hurricane/init.sh:/init.sh
+      - ./configs/hurricane/frr.conf:/etc/frr/frr.conf
+      - ./configs/hurricane/daemons:/etc/frr/daemons
+      - ./configs/hurricane/vtysh.conf:/etc/frr/vtysh.conf
+    networks:
+      hurricane0_net:
+        interface_name: eth0
+  
+  orange_jazztel:
+    image: frrouting/frr
+    command: sh /init.sh
+    depends_on: 
+      - hurricane
+    privileged: true
+    volumes:
+      - ./configs/orange_jazztel/init.sh:/init.sh
+      - ./configs/orange_jazztel/frr.conf:/etc/frr/frr.conf
+      - ./configs/orange_jazztel/daemons:/etc/frr/daemons
+      - ./configs/orange_jazztel/vtysh.conf:/etc/frr/vtysh.conf
+    networks:
+      orange_jazztel0_net:
+        interface_name: eth0
+  
+  espanix:
+    image: frrouting/frr
+    command: sh /init.sh
+    depends_on:  
+      - orange_jazztel
+    privileged: true
+    volumes:
+      - ./configs/espanix/init.sh:/init.sh
+      - ./configs/espanix/frr.conf:/etc/frr/frr.conf
+      - ./configs/espanix/daemons:/etc/frr/daemons
+      - ./configs/espanix/vtysh.conf:/etc/frr/vtysh.conf
+    networks:
+      espanix0_net:
+        interface_name: eth0
+  
+  google:
+    image: frrouting/frr
+    command: sh /init.sh
+    depends_on:  
+      - espanix
+    privileged: true
+    volumes:
+      - ./configs/google/init.sh:/init.sh
+      - ./configs/google/frr.conf:/etc/frr/frr.conf
+      - ./configs/google/daemons:/etc/frr/daemons
+      - ./configs/google/vtysh.conf:/etc/frr/vtysh.conf
+    networks:
+      google0_net:
+        interface_name: eth0
+      google1_net:
+        interface_name: eth1
+  
+  netflix:
+    image: frrouting/frr
+    command: sh /init.sh
+    depends_on:  
+      - google
+    privileged: true
+    volumes:
+      - ./configs/netflix/init.sh:/init.sh
+      - ./configs/netflix/frr.conf:/etc/frr/frr.conf
+      - ./configs/netflix/daemons:/etc/frr/daemons
+      - ./configs/netflix/vtysh.conf:/etc/frr/vtysh.conf
+    networks:
+      netflix0_net:
+        interface_name: eth0
+      netflix1_net:
+        interface_name: eth1
+      netflix2_net:
+        interface_name: eth2
+  
+  meta:
+    image: frrouting/frr
+    command: sh /init.sh
+    depends_on:  
+      - netflix
+    privileged: true
+    volumes:
+      - ./configs/meta/init.sh:/init.sh
+      - ./configs/meta/frr.conf:/etc/frr/frr.conf
+      - ./configs/meta/daemons:/etc/frr/daemons
+      - ./configs/meta/vtysh.conf:/etc/frr/vtysh.conf
+    networks:
+      meta0_net:
+        interface_name: eth0
+      meta1_net:
+        interface_name: eth1
+      meta2_net:
+        interface_name: eth2
+  
+  OP01-ADZ:
+    image: alpine
+    command: sh /init.sh
+    depends_on:  
+      - meta
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./configs/op01_adz/init.sh:/init.sh
+      - ./configs/op01_adz/generate_traffic.sh:/generate_traffic.sh
+    networks:
+      correostelecom_net:
+        interface_name: correostelecom0
+      avatel_adz_net:
+        interface_name: avatel0
+  
+  OP02-INF:
+    image: alpine
+    command: sh /init.sh
+    depends_on:  
+      - OP01-ADZ
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./configs/op02_inf/init.sh:/init.sh
+      - ./configs/op02_inf/generate_traffic.sh:/generate_traffic.sh
+    networks:
+      correostelecom_net:
+        interface_name: correostelecom0
+      airenetworks_net:
+        interface_name: airenetworks0
+  
+  OP03-SST:
+    image: alpine
+    command: sh /init.sh
+    depends_on:  
+      - OP02-INF
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./configs/op03_sst/init.sh:/init.sh
+      - ./configs/op03_sst/generate_traffic.sh:/generate_traffic.sh
+    networks:
+      orange_sst_net:
+        interface_name: orange0
+      avatel_sst_net:
+        interface_name: avatel0
+  
+  OP04-RJT:
+    image: alpine
+    command: sh /init.sh
+    depends_on:  
+      - OP03-SST
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./configs/op04_rjt/init.sh:/init.sh
+      - ./configs/op04_rjt/generate_traffic.sh:/generate_traffic.sh
+    networks:
+      orange_rjt_net:
+        interface_name: orange0
+      masmovil_rjt_net:
+        interface_name: masmovil0
+  
+  OP05-ALS:
+    image: alpine
+    command: sh /init.sh
+    depends_on:  
+      - OP04-RJT
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./configs/op05_als/init.sh:/init.sh
+      - ./configs/op05_als/generate_traffic.sh:/generate_traffic.sh
+    networks:
+      avatel_als_net:
+        interface_name: avatel0
+      airenetworks_net:
+        interface_name: airenetworks0
+  
+  OP06-EAM:
+    image: alpine
+    command: sh /init.sh
+    depends_on:  
+      - OP05-ALS
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./configs/op06_eam/init.sh:/init.sh
+      - ./configs/op06_eam/generate_traffic.sh:/generate_traffic.sh
+    networks:
+      lyntia_net:
+        interface_name: lyntia0
+  
+  OP07-CST:
+    image: alpine
+    command: sh /init.sh
+    depends_on:  
+      - OP06-EAM
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./configs/op07_cst/init.sh:/init.sh
+      - ./configs/op07_cst/generate_traffic.sh:/generate_traffic.sh
+    networks:
+      lyntia_net:
+        interface_name: lyntia0
+  
+  OP08-MDN:
+    image: alpine
+    command: sh /init.sh
+    depends_on:  
+      - OP07-CST
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./configs/op08_mdn/init.sh:/init.sh
+      - ./configs/op08_mdn/generate_traffic.sh:/generate_traffic.sh
+    networks:
+      lyntia_net:
+        interface_name: lyntia0
+  
+  OP09-JFG:
+    image: alpine
+    command: sh /init.sh
+    depends_on:  
+      - OP08-MDN
+    privileged: true
+    cap_add:
+      - NET_ADMIN
+    volumes:
+      - ./configs/op09_jfg/init.sh:/init.sh
+      - ./configs/op09_jfg/generate_traffic.sh:/generate_traffic.sh
+    networks:
+      lyntia_net:
+        interface_name: lyntia0
+  
+networks:
+  hurricane0_net:
+  orange_jazztel0_net:
+  espanix0_net:
+  google0_net:
+  google1_net:
+  netflix0_net:
+  netflix1_net:
+  netflix2_net:
+  meta0_net:
+  meta1_net:
+  meta2_net:
+  avatel_sst_net:
+  orange_sst_net:
+  orange_rjt_net:
+  avatel_als_net:
+  masmovil_rjt_net:
+  lyntia_net:
+  airenetworks_net:
+  avatel_adz_net:
+  correostelecom_net:

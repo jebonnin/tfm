@@ -1,0 +1,4 @@
+Traceroute via 190.90.0.90:
+  traceroute to 74.82.42.42 (74.82.42.42) from 190.90.0.90, 5 hops max, 46 byte packets
+   1  10.90.1.1  6.639 ms
+   2  74.82.42.42  8.746 ms

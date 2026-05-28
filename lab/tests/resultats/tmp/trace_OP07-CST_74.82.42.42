@@ -1,0 +1,4 @@
+Traceroute via 170.70.0.70:
+  traceroute to 74.82.42.42 (74.82.42.42) from 170.70.0.70, 5 hops max, 46 byte packets
+   1  10.70.1.1  6.590 ms
+   2  74.82.42.42  8.608 ms

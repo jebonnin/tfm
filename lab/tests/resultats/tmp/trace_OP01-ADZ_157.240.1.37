@@ -1,0 +1,8 @@
+Traceroute via 110.10.0.10:
+  traceroute to 157.240.1.37 (157.240.1.37) from 110.10.0.10, 5 hops max, 46 byte packets
+   1  10.10.1.1  8.961 ms
+   2  157.240.1.37  11.231 ms
+Traceroute via 110.10.1.10:
+  traceroute to 157.240.1.37 (157.240.1.37) from 110.10.1.10, 5 hops max, 46 byte packets
+   1  10.10.2.1  5.802 ms
+   2  157.240.1.37  8.002 ms

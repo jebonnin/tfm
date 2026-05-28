@@ -1,0 +1,25 @@
+PING 8.8.4.4 (8.8.4.4) from 130.30.1.30: 56 data bytes
+64 bytes from 8.8.4.4: seq=0 ttl=63 time=6.942 ms
+64 bytes from 8.8.4.4: seq=1 ttl=63 time=7.050 ms
+64 bytes from 8.8.4.4: seq=2 ttl=63 time=6.973 ms
+64 bytes from 8.8.4.4: seq=3 ttl=63 time=6.961 ms
+64 bytes from 8.8.4.4: seq=4 ttl=63 time=6.937 ms
+64 bytes from 8.8.4.4: seq=5 ttl=63 time=6.920 ms
+64 bytes from 8.8.4.4: seq=6 ttl=63 time=6.984 ms
+64 bytes from 8.8.4.4: seq=7 ttl=63 time=6.949 ms
+64 bytes from 8.8.4.4: seq=8 ttl=63 time=6.939 ms
+64 bytes from 8.8.4.4: seq=9 ttl=63 time=6.965 ms
+64 bytes from 8.8.4.4: seq=10 ttl=63 time=6.932 ms
+64 bytes from 8.8.4.4: seq=11 ttl=63 time=6.927 ms
+64 bytes from 8.8.4.4: seq=12 ttl=63 time=6.927 ms
+64 bytes from 8.8.4.4: seq=13 ttl=63 time=6.971 ms
+64 bytes from 8.8.4.4: seq=14 ttl=63 time=6.942 ms
+64 bytes from 8.8.4.4: seq=15 ttl=63 time=7.003 ms
+64 bytes from 8.8.4.4: seq=16 ttl=63 time=6.932 ms
+64 bytes from 8.8.4.4: seq=17 ttl=63 time=6.907 ms
+64 bytes from 8.8.4.4: seq=18 ttl=63 time=6.919 ms
+64 bytes from 8.8.4.4: seq=19 ttl=63 time=6.973 ms
+
+--- 8.8.4.4 ping statistics ---
+20 packets transmitted, 20 packets received, 0% packet loss
+round-trip min/avg/max = 6.907/6.952/7.050 ms

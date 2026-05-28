@@ -1,0 +1,25 @@
+PING 195.69.144.1 (195.69.144.1) from 110.10.0.10: 56 data bytes
+64 bytes from 195.69.144.1: seq=0 ttl=63 time=10.408 ms
+64 bytes from 195.69.144.1: seq=1 ttl=63 time=10.444 ms
+64 bytes from 195.69.144.1: seq=2 ttl=63 time=10.373 ms
+64 bytes from 195.69.144.1: seq=3 ttl=63 time=10.409 ms
+64 bytes from 195.69.144.1: seq=4 ttl=63 time=10.391 ms
+64 bytes from 195.69.144.1: seq=5 ttl=63 time=10.426 ms
+64 bytes from 195.69.144.1: seq=6 ttl=63 time=10.387 ms
+64 bytes from 195.69.144.1: seq=7 ttl=63 time=10.359 ms
+64 bytes from 195.69.144.1: seq=8 ttl=63 time=10.382 ms
+64 bytes from 195.69.144.1: seq=9 ttl=63 time=10.655 ms
+64 bytes from 195.69.144.1: seq=10 ttl=63 time=10.379 ms
+64 bytes from 195.69.144.1: seq=11 ttl=63 time=10.341 ms
+64 bytes from 195.69.144.1: seq=12 ttl=63 time=10.345 ms
+64 bytes from 195.69.144.1: seq=13 ttl=63 time=10.415 ms
+64 bytes from 195.69.144.1: seq=14 ttl=63 time=10.409 ms
+64 bytes from 195.69.144.1: seq=15 ttl=63 time=10.338 ms
+64 bytes from 195.69.144.1: seq=16 ttl=63 time=10.558 ms
+64 bytes from 195.69.144.1: seq=17 ttl=63 time=10.419 ms
+64 bytes from 195.69.144.1: seq=18 ttl=63 time=10.412 ms
+64 bytes from 195.69.144.1: seq=19 ttl=63 time=10.750 ms
+
+--- 195.69.144.1 ping statistics ---
+20 packets transmitted, 20 packets received, 0% packet loss
+round-trip min/avg/max = 10.338/10.430/10.750 ms

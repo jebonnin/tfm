@@ -1,0 +1,25 @@
+PING 74.82.42.42 (74.82.42.42) from 130.30.1.30: 56 data bytes
+64 bytes from 74.82.42.42: seq=0 ttl=63 time=8.845 ms
+64 bytes from 74.82.42.42: seq=1 ttl=63 time=8.905 ms
+64 bytes from 74.82.42.42: seq=2 ttl=63 time=8.856 ms
+64 bytes from 74.82.42.42: seq=3 ttl=63 time=8.796 ms
+64 bytes from 74.82.42.42: seq=4 ttl=63 time=8.959 ms
+64 bytes from 74.82.42.42: seq=5 ttl=63 time=8.833 ms
+64 bytes from 74.82.42.42: seq=6 ttl=63 time=8.841 ms
+64 bytes from 74.82.42.42: seq=7 ttl=63 time=8.823 ms
+64 bytes from 74.82.42.42: seq=8 ttl=63 time=8.926 ms
+64 bytes from 74.82.42.42: seq=9 ttl=63 time=8.853 ms
+64 bytes from 74.82.42.42: seq=10 ttl=63 time=8.840 ms
+64 bytes from 74.82.42.42: seq=11 ttl=63 time=8.820 ms
+64 bytes from 74.82.42.42: seq=12 ttl=63 time=8.822 ms
+64 bytes from 74.82.42.42: seq=13 ttl=63 time=8.874 ms
+64 bytes from 74.82.42.42: seq=14 ttl=63 time=8.989 ms
+64 bytes from 74.82.42.42: seq=15 ttl=63 time=9.014 ms
+64 bytes from 74.82.42.42: seq=16 ttl=63 time=8.877 ms
+64 bytes from 74.82.42.42: seq=17 ttl=63 time=8.843 ms
+64 bytes from 74.82.42.42: seq=18 ttl=63 time=8.942 ms
+64 bytes from 74.82.42.42: seq=19 ttl=63 time=9.023 ms
+
+--- 74.82.42.42 ping statistics ---
+20 packets transmitted, 20 packets received, 0% packet loss
+round-trip min/avg/max = 8.796/8.884/9.023 ms

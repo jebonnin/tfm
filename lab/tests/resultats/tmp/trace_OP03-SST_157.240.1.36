@@ -1,0 +1,8 @@
+Traceroute via 130.30.0.30:
+  traceroute to 157.240.1.36 (157.240.1.36) from 130.30.0.30, 5 hops max, 46 byte packets
+   1  10.30.1.1  14.664 ms
+   2  157.240.1.36  16.758 ms
+Traceroute via 130.30.1.30:
+  traceroute to 157.240.1.36 (157.240.1.36) from 130.30.1.30, 5 hops max, 46 byte packets
+   1  *
+   2  157.240.1.36  8.822 ms

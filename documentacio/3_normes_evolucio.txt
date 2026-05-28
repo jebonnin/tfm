@@ -1,0 +1,9 @@
+
+A l'hora de fer evolucionar les connexions del node d'agregació, s'han tingut en compte les següents restriccions:
+
+ 1) S'han de mantenir sempre com a mínim dues connexions lliures
+ 2) No s'ha de superar el 80% d'ocupació de cap interfície
+ 3) S'ha de mantenir un equilibri raonable entre interfícies 10GE i d'alta capacitat, respectant les restriccions 1) i 2). 
+    Això implica tenir un màxim de 3 connexions 10GE per proveïdor. Si es necessita una quarta, o no es respecta 1), passar a alta capacitat.
+ 4) Els proveïdors Hurricane, Espanix, Google, Meta i Netflix només admeten interfícies 10GE i 100GE, sense cap valor intermig.
+

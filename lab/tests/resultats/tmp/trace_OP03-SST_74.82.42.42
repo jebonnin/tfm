@@ -1,0 +1,8 @@
+Traceroute via 130.30.0.30:
+  traceroute to 74.82.42.42 (74.82.42.42) from 130.30.0.30, 5 hops max, 46 byte packets
+   1  10.30.1.1  14.684 ms
+   2  74.82.42.42  16.779 ms
+Traceroute via 130.30.1.30:
+  traceroute to 74.82.42.42 (74.82.42.42) from 130.30.1.30, 5 hops max, 46 byte packets
+   1  10.30.2.1  6.746 ms
+   2  74.82.42.42  8.787 ms

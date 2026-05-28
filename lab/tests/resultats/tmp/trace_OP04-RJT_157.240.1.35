@@ -1,0 +1,8 @@
+Traceroute via 140.40.0.40:
+  traceroute to 157.240.1.35 (157.240.1.35) from 140.40.0.40, 5 hops max, 46 byte packets
+   1  10.40.1.1  9.284 ms
+   2  157.240.1.35  11.358 ms
+Traceroute via 140.40.1.40:
+  traceroute to 157.240.1.35 (157.240.1.35) from 140.40.1.40, 5 hops max, 46 byte packets
+   1  10.40.2.1  12.692 ms
+   2  157.240.1.35  14.783 ms

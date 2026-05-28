@@ -1,0 +1,25 @@
+PING 8.8.4.4 (8.8.4.4) from 140.40.0.40: 56 data bytes
+64 bytes from 8.8.4.4: seq=0 ttl=63 time=9.502 ms
+64 bytes from 8.8.4.4: seq=1 ttl=63 time=9.502 ms
+64 bytes from 8.8.4.4: seq=2 ttl=63 time=9.555 ms
+64 bytes from 8.8.4.4: seq=3 ttl=63 time=9.454 ms
+64 bytes from 8.8.4.4: seq=4 ttl=63 time=9.468 ms
+64 bytes from 8.8.4.4: seq=5 ttl=63 time=9.506 ms
+64 bytes from 8.8.4.4: seq=6 ttl=63 time=9.474 ms
+64 bytes from 8.8.4.4: seq=7 ttl=63 time=9.500 ms
+64 bytes from 8.8.4.4: seq=8 ttl=63 time=9.488 ms
+64 bytes from 8.8.4.4: seq=9 ttl=63 time=9.536 ms
+64 bytes from 8.8.4.4: seq=10 ttl=63 time=9.550 ms
+64 bytes from 8.8.4.4: seq=11 ttl=63 time=9.479 ms
+64 bytes from 8.8.4.4: seq=12 ttl=63 time=9.499 ms
+64 bytes from 8.8.4.4: seq=13 ttl=63 time=9.698 ms
+64 bytes from 8.8.4.4: seq=14 ttl=63 time=9.484 ms
+64 bytes from 8.8.4.4: seq=15 ttl=63 time=9.447 ms
+64 bytes from 8.8.4.4: seq=16 ttl=63 time=9.436 ms
+64 bytes from 8.8.4.4: seq=17 ttl=63 time=9.590 ms
+64 bytes from 8.8.4.4: seq=18 ttl=63 time=9.454 ms
+64 bytes from 8.8.4.4: seq=19 ttl=63 time=9.501 ms
+
+--- 8.8.4.4 ping statistics ---
+20 packets transmitted, 20 packets received, 0% packet loss
+round-trip min/avg/max = 9.436/9.506/9.698 ms

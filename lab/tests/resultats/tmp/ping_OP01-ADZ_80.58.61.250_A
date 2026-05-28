@@ -1,0 +1,25 @@
+PING 80.58.61.250 (80.58.61.250) from 110.10.0.10: 56 data bytes
+64 bytes from 80.58.61.250: seq=0 ttl=63 time=10.369 ms
+64 bytes from 80.58.61.250: seq=1 ttl=63 time=10.418 ms
+64 bytes from 80.58.61.250: seq=2 ttl=63 time=10.334 ms
+64 bytes from 80.58.61.250: seq=3 ttl=63 time=10.352 ms
+64 bytes from 80.58.61.250: seq=4 ttl=63 time=10.392 ms
+64 bytes from 80.58.61.250: seq=5 ttl=63 time=10.323 ms
+64 bytes from 80.58.61.250: seq=6 ttl=63 time=10.362 ms
+64 bytes from 80.58.61.250: seq=7 ttl=63 time=10.341 ms
+64 bytes from 80.58.61.250: seq=8 ttl=63 time=10.311 ms
+64 bytes from 80.58.61.250: seq=9 ttl=63 time=10.348 ms
+64 bytes from 80.58.61.250: seq=10 ttl=63 time=10.371 ms
+64 bytes from 80.58.61.250: seq=11 ttl=63 time=10.356 ms
+64 bytes from 80.58.61.250: seq=12 ttl=63 time=10.329 ms
+64 bytes from 80.58.61.250: seq=13 ttl=63 time=10.332 ms
+64 bytes from 80.58.61.250: seq=14 ttl=63 time=10.335 ms
+64 bytes from 80.58.61.250: seq=15 ttl=63 time=10.324 ms
+64 bytes from 80.58.61.250: seq=16 ttl=63 time=10.305 ms
+64 bytes from 80.58.61.250: seq=17 ttl=63 time=10.318 ms
+64 bytes from 80.58.61.250: seq=18 ttl=63 time=10.356 ms
+64 bytes from 80.58.61.250: seq=19 ttl=63 time=10.426 ms
+
+--- 80.58.61.250 ping statistics ---
+20 packets transmitted, 20 packets received, 0% packet loss
+round-trip min/avg/max = 10.305/10.350/10.426 ms

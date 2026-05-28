@@ -1,0 +1,74 @@
+Informe de Tests de Xarxa - Wed May 27 07:05:29 PM CEST 2026
+----------------------------------------------------------
+Fase 0:
+  - Normal: OK
+  - Falla Hurricane: OK
+  - Falla Orange-Jazztel: OK
+  - Falla Espanix: OK
+  - Falla Google: OK
+  - Falla Netflix: OK
+  - Falla Meta: OK
+  - Falla Meta + Google: OK
+  - Falla Meta + Netflix: OK
+  - Falla Meta + Espanix: OK
+----------------------------------------------------------
+Fase 1:
+  - Normal: OK
+  - Falla Hurricane: OK
+  - Falla Orange-Jazztel: OK
+  - Falla Espanix: OK
+  - Falla Google: OK
+  - Falla Netflix: OK
+  - Falla Meta: OK
+  - Falla Meta + Google: OK
+  - Falla Meta + Netflix: OK
+  - Falla Meta + Espanix: OK
+----------------------------------------------------------
+Fase 2:
+  - Normal: OK
+  - Falla Hurricane: OK
+  - Falla Orange-Jazztel: OK
+  - Falla Espanix: OK
+  - Falla Google: OK
+  - Falla Netflix: OK
+  - Falla Meta: OK
+  - Falla Meta + Google: OK
+  - Falla Meta + Netflix: OK
+  - Falla Meta + Espanix: OK
+----------------------------------------------------------
+Fase 3:
+  - Normal: OK
+  - Falla Hurricane: OK
+  - Falla Orange-Jazztel: OK
+  - Falla Espanix: OK
+  - Falla Google: OK
+  - Falla Netflix: OK
+  - Falla Meta: OK
+  - Falla Meta + Google: OK
+  - Falla Meta + Netflix: OK
+  - Falla Meta + Espanix: OK
+----------------------------------------------------------
+Fase 4:
+  - Normal: OK
+  - Falla Hurricane: OK
+  - Falla Orange-Jazztel: OK
+  - Falla Espanix: OK
+  - Falla Google: OK
+  - Falla Netflix: OK
+  - Falla Meta: OK
+  - Falla Meta + Google: OK
+  - Falla Meta + Netflix: OK
+  - Falla Meta + Espanix: OK
+----------------------------------------------------------
+Fase 5:
+  - Normal: OK
+  - Falla Hurricane: OK
+  - Falla Orange-Jazztel: OK
+  - Falla Espanix: OK
+  - Falla Google: OK
+  - Falla Netflix: OK
+  - Falla Meta: OK
+  - Falla Meta + Google: OK
+  - Falla Meta + Netflix: OK
+  - Falla Meta + Espanix: OK
+----------------------------------------------------------

@@ -1,0 +1,25 @@
+PING 157.240.1.36 (157.240.1.36) from 120.20.1.20: 56 data bytes
+64 bytes from 157.240.1.36: seq=0 ttl=63 time=12.261 ms
+64 bytes from 157.240.1.36: seq=1 ttl=63 time=12.283 ms
+64 bytes from 157.240.1.36: seq=2 ttl=63 time=12.173 ms
+64 bytes from 157.240.1.36: seq=3 ttl=63 time=12.290 ms
+64 bytes from 157.240.1.36: seq=4 ttl=63 time=12.226 ms
+64 bytes from 157.240.1.36: seq=5 ttl=63 time=12.246 ms
+64 bytes from 157.240.1.36: seq=6 ttl=63 time=16.248 ms
+64 bytes from 157.240.1.36: seq=7 ttl=63 time=12.224 ms
+64 bytes from 157.240.1.36: seq=8 ttl=63 time=12.244 ms
+64 bytes from 157.240.1.36: seq=9 ttl=63 time=12.247 ms
+64 bytes from 157.240.1.36: seq=10 ttl=63 time=12.245 ms
+64 bytes from 157.240.1.36: seq=11 ttl=63 time=12.281 ms
+64 bytes from 157.240.1.36: seq=12 ttl=63 time=12.244 ms
+64 bytes from 157.240.1.36: seq=13 ttl=63 time=12.272 ms
+64 bytes from 157.240.1.36: seq=14 ttl=63 time=12.238 ms
+64 bytes from 157.240.1.36: seq=15 ttl=63 time=12.271 ms
+64 bytes from 157.240.1.36: seq=16 ttl=63 time=12.241 ms
+64 bytes from 157.240.1.36: seq=17 ttl=63 time=12.340 ms
+64 bytes from 157.240.1.36: seq=18 ttl=63 time=12.219 ms
+64 bytes from 157.240.1.36: seq=19 ttl=63 time=12.277 ms
+
+--- 157.240.1.36 ping statistics ---
+20 packets transmitted, 20 packets received, 0% packet loss
+round-trip min/avg/max = 12.173/12.453/16.248 ms

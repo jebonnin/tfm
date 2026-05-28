@@ -1,0 +1,8 @@
+Traceroute via 110.10.0.10:
+  traceroute to 80.58.61.250 (80.58.61.250) from 110.10.0.10, 5 hops max, 46 byte packets
+   1  10.10.1.1  9.181 ms
+   2  80.58.61.250  10.340 ms
+Traceroute via 110.10.1.10:
+  traceroute to 80.58.61.250 (80.58.61.250) from 110.10.1.10, 5 hops max, 46 byte packets
+   1  10.10.2.1  5.926 ms
+   2  80.58.61.250  6.991 ms

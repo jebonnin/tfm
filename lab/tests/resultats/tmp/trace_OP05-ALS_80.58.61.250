@@ -1,0 +1,8 @@
+Traceroute via 150.50.0.50:
+  traceroute to 80.58.61.250 (80.58.61.250) from 150.50.0.50, 5 hops max, 46 byte packets
+   1  10.50.1.1  16.681 ms
+   2  80.58.61.250  17.733 ms
+Traceroute via 150.50.1.50:
+  traceroute to 80.58.61.250 (80.58.61.250) from 150.50.1.50, 5 hops max, 46 byte packets
+   1  10.50.2.1  10.118 ms
+   2  80.58.61.250  11.212 ms
